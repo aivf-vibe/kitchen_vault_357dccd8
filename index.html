@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie - Your Favorite Food Delivered</title>
+    <meta name="description" content="Order delicious food from your favorite restaurants with Foodie. Fast delivery, great taste, amazing experience.">
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#ff6b6b">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Foodie">
+    <meta name="msapplication-TileColor" content="#ff6b6b">
+    <meta name="msapplication-config" content="/browserconfig.xml">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+    
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" sizes="72x72" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzIiIGhlaWdodD0iNzIiIHZpZXdCb3g9IjAgMCA3MiA3MiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjcyIiBoZWlnaHQ9IjcyIiByeD0iMTYiIGZpbGw9InVybCgjcGFpbnQwX2xpbmVhcl8xXzEpIi8+CjxwYXRoIGQ9Ik0yMCAzNkMxOCAzNiAxNiAzNiAxNiAzNkMxNiAzNiAxNiAzOCAxNiA0MEMxNiA0MiAxNiA0NCAxNiA0NEMxNiA0NCAxOCA0NCAyMCA0NEMyMiA0NCAyNCA0NCAyNCA0NEMyNCA0NCAyNCA0MiAyNCA0MEMyNCAzOCAyNCAzNiAyNCAzNkMyNCAzNiAyMiAzNiAyMCAzNloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0zMiAzNkMzMCAzNiAyOCAzNiAyOCAzNkMyOCAzNiAyOCAzOCAyOCA0MEMyOCA0MiAyOCA0NCAyOCA0NEMyOCA0NCAzMCA0NCAzMiA0NEMzNCA0NCAzNiA0NCAzNiA0NEMzNiA0NCAzNiA0MiAzNiA0MEMzNiAzOCAzNiAzNiAzNiAzNkMzNiAzNiAzNCAzNiAzMiAzNloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik00NCAzNkM0MiAzNiA0MCAzNiA0MCAzNkM0MCAzNiA0MCAzOCA0MCA0MEM0MCA0MiA0MCA0NCA0MCA0NEM0MCA0NCA0MiA0NCA0NCA0NEM0NiA0NCA0OCA0NCA0OCA0NEM0OCA0NCA0OCA0MiA0OCA0MEM0OCAzOCA0OCAzNiA0OCAzNkM0OCAzNiA0NiAzNiA0NCAzNloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0yMCAyOEMxOCAyOCAxNiAyOCAxNiAyOEMxNiAyOCAxNiAzMCAxNiAzMkMxNiAzNCAxNiAzNiAxNiAzNkMxNiAzNiAxOCAzNiAyMCAzNkMyMiAzNiAyNCAzNiAyNCAzNkMyNCAzNiAyNCAzNCAyNCAzMkMyNCAzMCAyNCAyOCAyNCAyOEMyNCAyOCAyMiAyOCAyMCAyOFoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0zMiAyOEMzMCAyOCAyOCAyOCAyOCAyOEMyOCAyOCAyOCAzMCAyOCAzMkMyOCAzNCAyOCAzNiAyOCAzNkMyOCAzNiAzMCAzNiAzMiAzNkMzNCAzNiAzNiAzNiAzNiAzNkMzNiAzNiAzNiAzNCAzNiAzMkMzNiAzMCAzNiAyOCAzNiAyOEMzNiAyOCAzNCAyOCAzMiAyOFoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik00NCAyOEM0MiAyOCA0MCAyOCA0MCAyOEM0MCAyOCA0MCAzMCA0MCAzMkM0MCAzNCA0MCAzNiA0MCAzNkM0MCAzNiA0MiAzNiA0NCAzNkM0NiAzNiA0OCAzNiA0OCAzNkM0OCAzNiA0OCAzNCA0OCAzMkM0OCAzMCA0OCAyOCA0OCAyOEM0OCAyOCA0NiAyOCA0NCAyOFoiIGZpbGw9IndoaXRlIi8+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXJfMV8xIiB4MT0iMCIgeTE9IjAiIHgyPSI3MiIgeTI9IjcyIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiNmZjZiNmIiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmY4ZTUzIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPHN2Zz4K">
+    <link rel="apple-touch-icon" sizes="96x96" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHZpZXdCb3g9IjAgMCA5NiA5NiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9Ijk2IiBoZWlnaHQ9Ijk2IiByeD0iMjAiIGZpbGw9InVybCgjcGFpbnQwX2xpbmVhcl8xXzEpIi8+CjxwYXRoIGQ9Ik0yNiA0OEMyNCA0OCAyMiA0OCAyMiA0OEMyMiA0OCAyMiA1MCAyMiA1MkMyMiA1NCAyMiA1NiAyMiA1NkMyMiA1NiAyNCA1NiAyNiA1NkMyOCA1NiAzMCA1NiAzMCA1NkMzMCA1NiAzMCA1NCAzMCA1MkMzMCA1MCAzMCA0OCAzMCA0OEMzMCA0OCAyOCA0OCAyNiA0OFoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik00MCA0OEMzOCA0OCAzNiA0OCAzNiA0OEMzNiA0OCAzNiA1MCAzNiA1MkMzNiA1NCAzNiA1NiAzNiA1NkMzNiA1NiAzOCA1NiA0MCA1NkM0MiA1NiA0NCA1NiA0NCA1NkM0NCA1NiA0NCA1NCA0NCA1MkM0NCA1MCA0NCA0OCA0NCA0OEM0NCA0OCA0MiA0OCA0MCA0OFoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik01NCA0OEM1MiA0OCA1MCA0OCA1MCA0OEM1MCA0OCA1MCA1MCA1MCA1MkM1MCA1NCA1MCA1NiA1MCA1NkM1MCA1NiA1MiA1NiA1NCA1NkM1NiA1NiA1OCA1NiA1OCA1NkM1OCA1NiA1OCA1NCA1OCA1MkM1OCA1MCA1OCA0OCA1OCA0OEM1OCA0OCA1NiA0OCA1NCA0OFoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik02OCA0OEM2NiA0OCA2NCA0OCA2NCA0OEM2NCA0OCA2NCA1MCA2NCA1MkM2NCA1NCA2NCA1NiA2NCA1NkM2NCA1NiA2NiA1NiA2OCA1NkM3MCA1NiA3MiA1NiA3MiA1NkM3MiA1NiA3MiA1NCA3MiA1MkM3MiA1MCA3MiA0OCA3MiA0OEM3MiA0OCA3MCA0OCA2OCA0OFoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0yNiAzNkMyNCAzNiAyMiAzNiAyMiAzNkMyMiAzNiAyMiAzOCAyMiA0MEMyMiA0MiAyMiA0NCAyMiA0NEMyMiA0NCAyNCA0NCAyNiA0NEMyOCA0NCAzMCA0NCAzMCA0NEMzMCA0NCAzMCA0MiAzMCA0MEMzMCAzOCAzMCAzNiAzMCAzNkMzMCAzNiAyOCAzNiAyNiAzNloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik00MCAzNkMzOCAzNiAzNiAzNiAzNiAzNkMzNiAzNiAzNiAzOCAzNiA0MEMzNiA0MiAzNiA0NCAzNiA0NEMzNiA0NCAzOCA0NCA0MCA0NEM0MiA0NCA0NCA0NCA0NCA0NEM0NCA0NCA0NCA0MiA0NCA0MEM0NCAzOCA0NCAzNiA0NCAzNkM0NCAzNiA0MiAzNiA0MCAzNloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik01NCAzNkM1MiAzNiA1MCAzNiA1MCAzNkM1MCAzNiA1MCAzOCA1MCA0MEM1MCA0MiA1MCA0NCA1MCA0NEM1MCA0NCA1MiA0NCA1NCA0NEM1NiA0NCA1OCA0NCA1OCA0NEM1OCA0NCA1OCA0MiA1OCA0MEM1OCAzOCA1OCAzNiA1OCAzNkM1OCAzNiA1NiAzNiA1NCAzNloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik02OCAzNkM2NiAzNiA2NCAzNiA2NCAzNkM2NCAzNiA2NCAzOCA2NCA0MEM2NCA0MiA2NCA0NCA2NCA0NEM2NCA0NCA2NiA0NCA2OCA0NEM3MCA0NCA3MiA0NCA3MiA0NEMNMiA0NCA3MiA0MiA3MiA0MEM3MiAzOCA3MiAzNiA3MiAzNkM3MiAzNiA3MCAzNiA2OCAzNloiIGZpbGw9IndoaXRlIi8+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9InBhaW50MF9saW5lYXJfMV8xIiB4MT0iMCIgeTE9IjAiIHgyPSI5NiIgeTI9Ijk2IiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiNmZjZiNmIiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmY4ZTUzIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPHN2Zz4K">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0idXJsKCNwYWludDBfbGluZWFyXzFfMSkiLz4KPHN2ZyB4PSI4IiB5PSI4IiB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgo8cGF0aCBkPSJtMTIgMTggNi02SDZsNiA2eiIvPgo8cGF0aCBkPSJtNiA2IDMgM2gzLjVhNSA1IDAgMCAxIDAgMTBIMTJsLTMtMyIvPgo8L3N2Zz4KPGRlZnM+CjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQwX2xpbmVhcl8xXzEiIHgxPSIwIiB5MT0iMCIgeDI9IjMyIiB5Mj0iMzIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KPHN0b3Agc3RvcC1jb2xvcj0iI2ZmNmI2YiIvPgo8c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNmZjhlNTMiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8L3N2Zz4K">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+
+        .nav-menu a:hover {
+            opacity: 0.8;
+        }
+
+        .auth-buttons {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn {
+            padding: 0.5rem 1.5rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: #ff6b6b;
+        }
+
+        .btn-primary {
+            background: white;
+            color: #ff6b6b;
+        }
+
+        .btn-primary:hover {
+            background: #f0f0f0;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+            color: white;
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+            margin-top: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Delivery Animation */
+        .delivery-animation {
+            position: absolute;
+            top: 50%;
+            right: -100px;
+            transform: translateY(-50%);
+            z-index: 1;
+            opacity: 0.3;
+        }
+
+        .delivery-bike {
+            font-size: 4rem;
+            color: white;
+            animation: deliveryRide 8s linear infinite;
+        }
+
+        .food-items {
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            right: 10%;
+            display: flex;
+            justify-content: space-around;
+            z-index: 1;
+            opacity: 0.2;
+        }
+
+        .floating-food {
+            font-size: 2rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .floating-food:nth-child(1) { animation-delay: 0s; }
+        .floating-food:nth-child(2) { animation-delay: 0.5s; }
+        .floating-food:nth-child(3) { animation-delay: 1s; }
+        .floating-food:nth-child(4) { animation-delay: 1.5s; }
+        .floating-food:nth-child(5) { animation-delay: 2s; }
+
+        @keyframes deliveryRide {
+            0% {
+                right: -100px;
+                transform: translateY(-50%) scaleX(1);
+            }
+            50% {
+                right: calc(100% + 100px);
+                transform: translateY(-50%) scaleX(1);
+            }
+            51% {
+                right: calc(100% + 100px);
+                transform: translateY(-50%) scaleX(-1);
+            }
+            100% {
+                right: -100px;
+                transform: translateY(-50%) scaleX(-1);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(5deg);
+            }
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 1rem 1.5rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .search-btn {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 4rem 2rem;
+            background: #f8f9fa;
+        }
+
+        .features-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            color: #ff6b6b;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Popular Restaurants */
+        .restaurants {
+            padding: 4rem 2rem;
+        }
+
+        .restaurants-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .restaurants h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+
+        .restaurant-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .restaurant-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .restaurant-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .restaurant-image {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .restaurant-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.3));
+        }
+
+        .restaurant-info {
+            padding: 1.5rem;
+        }
+
+        .restaurant-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .restaurant-cuisine {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .restaurant-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .rating {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            background: #4caf50;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+        }
+
+        .delivery-time {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 4rem 2rem;
+            background: #f8f9fa;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+
+        .faq-item {
+            background: white;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            background: white;
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #333;
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem 1.5rem;
+            color: #666;
+            line-height: 1.6;
+            display: none;
+        }
+
+        .faq-answer.active {
+            display: block;
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            padding: 3rem 2rem 1rem;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: #ff6b6b;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section ul li a:hover {
+            color: #ff6b6b;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #555;
+            color: #ccc;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .features-grid,
+            .restaurant-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-container {
+                padding: 0 1rem;
+            }
+
+            .delivery-bike {
+                font-size: 2.5rem;
+            }
+
+            .floating-food {
+                font-size: 1.5rem;
+            }
+
+            .food-items {
+                top: 15%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-utensils"></i>
+                Foodie
+            </div>
+            <nav class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#restaurants">Restaurants</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </nav>
+            <div class="auth-buttons">
+                <a href="#login" class="btn btn-outline">Login</a>
+                <a href="#signup" class="btn btn-primary">Sign Up</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <!-- Floating Food Items -->
+        <div class="food-items">
+            <div class="floating-food">🍕</div>
+            <div class="floating-food">🍔</div>
+            <div class="floating-food">🍜</div>
+            <div class="floating-food">🍣</div>
+            <div class="floating-food">🌮</div>
+        </div>
+        
+        <!-- Delivery Animation -->
+        <div class="delivery-animation">
+            <div class="delivery-bike">🏍️</div>
+        </div>
+        
+        <div class="hero-container">
+            <h1>Delicious Food, Delivered Fast</h1>
+            <p>Order from your favorite restaurants and get fresh, hot food delivered to your doorstep in minutes</p>
+            <div class="search-container">
+                <input type="text" class="search-box" placeholder="Enter your delivery address or restaurant name...">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="features-container">
+            <h2>Why Choose Foodie?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Lightning Fast Delivery</h3>
+                    <p>Get your favorite food delivered in 30 minutes or less. Our delivery partners are always ready to serve you quickly and efficiently.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Top Quality Restaurants</h3>
+                    <p>We partner with the best restaurants in your city to ensure you get fresh, delicious food every time you order.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Easy Ordering</h3>
+                    <p>Simple and intuitive interface makes ordering your favorite food a breeze. Track your order in real-time from kitchen to your door.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Restaurants -->
+    <section class="restaurants" id="restaurants">
+        <div class="restaurants-container">
+            <h2>Popular Restaurants</h2>
+            <div class="restaurant-grid">
+                <div class="restaurant-card" onclick="viewRestaurant('pizza-palace')">
+                    <div class="restaurant-image" style="background-image: url('https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');">
+                    </div>
+                    <div class="restaurant-info">
+                        <div class="restaurant-name">Pizza Palace</div>
+                        <div class="restaurant-cuisine">Italian, Pizza, Fast Food</div>
+                        <div class="restaurant-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                4.5
+                            </div>
+                            <div class="delivery-time">25-30 mins</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-card" onclick="viewRestaurant('burger-barn')">
+                    <div class="restaurant-image" style="background-image: url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');">
+                    </div>
+                    <div class="restaurant-info">
+                        <div class="restaurant-name">Burger Barn</div>
+                        <div class="restaurant-cuisine">American, Burgers, Fries</div>
+                        <div class="restaurant-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                4.3
+                            </div>
+                            <div class="delivery-time">20-25 mins</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-card" onclick="viewRestaurant('spice-garden')">
+                    <div class="restaurant-image" style="background-image: url('https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');">
+                    </div>
+                    <div class="restaurant-info">
+                        <div class="restaurant-name">Spice Garden</div>
+                        <div class="restaurant-cuisine">Indian, Curry, Biryani</div>
+                        <div class="restaurant-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                4.7
+                            </div>
+                            <div class="delivery-time">35-40 mins</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-card" onclick="viewRestaurant('sushi-zen')">
+                    <div class="restaurant-image" style="background-image: url('https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');">
+                    </div>
+                    <div class="restaurant-info">
+                        <div class="restaurant-name">Sushi Zen</div>
+                        <div class="restaurant-cuisine">Japanese, Sushi, Asian</div>
+                        <div class="restaurant-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                4.6
+                            </div>
+                            <div class="delivery-time">30-35 mins</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-card" onclick="viewRestaurant('taco-fiesta')">
+                    <div class="restaurant-image" style="background-image: url('https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');">
+                    </div>
+                    <div class="restaurant-info">
+                        <div class="restaurant-name">Taco Fiesta</div>
+                        <div class="restaurant-cuisine">Mexican, Tacos, Burritos</div>
+                        <div class="restaurant-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                4.4
+                            </div>
+                            <div class="delivery-time">20-25 mins</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="restaurant-card" onclick="viewRestaurant('healthy-bowl')">
+                    <div class="restaurant-image" style="background-image: url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80');">
+                    </div>
+                    <div class="restaurant-info">
+                        <div class="restaurant-name">Healthy Bowl</div>
+                        <div class="restaurant-cuisine">Healthy, Salads, Smoothies</div>
+                        <div class="restaurant-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                4.2
+                            </div>
+                            <div class="delivery-time">15-20 mins</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="faq-container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    How long does delivery take?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    Most orders are delivered within 30-45 minutes. Delivery time may vary based on your location, restaurant preparation time, and weather conditions.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    What are the delivery charges?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    Delivery charges start from $2.99 and may vary based on distance and restaurant. Free delivery is available on orders above $25.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    Can I track my order?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    Yes! You can track your order in real-time from the moment it's confirmed until it reaches your doorstep. You'll receive SMS and app notifications for updates.
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                    What payment methods do you accept?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer">
+                    We accept all major credit cards, debit cards, PayPal, Apple Pay, Google Pay, and cash on delivery in select areas.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>For Foodies</h3>
+                    <ul>
+                        <li><a href="#code-of-conduct">Code of Conduct</a></li>
+                        <li><a href="#community">Community</a></li>
+                        <li><a href="#blogger-help">Blogger Help</a></li>
+                        <li><a href="#mobile-apps">Mobile Apps</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>For Restaurants</h3>
+                    <ul>
+                        <li><a href="#partner-with-us">Partner with us</a></li>
+                        <li><a href="#apps-for-you">Apps For You</a></li>
+                        <li><a href="#restaurant-dashboard">Dashboard</a></li>
+                        <li><a href="#business-blog">Business Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Learn More</h3>
+                    <ul>
+                        <li><a href="#privacy">Privacy</a></li>
+                        <li><a href="#security">Security</a></li>
+                        <li><a href="#terms">Terms</a></li>
+                        <li><a href="#sitemap">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Foodie. All rights reserved. Designed by VibeStud.io</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Toggle Function
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const icon = element.querySelector('i');
+            
+            if (answer.classList.contains('active')) {
+                answer.classList.remove('active');
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                // Close all other FAQs
+                document.querySelectorAll('.faq-answer').forEach(ans => {
+                    ans.classList.remove('active');
+                });
+                document.querySelectorAll('.faq-question i').forEach(ic => {
+                    ic.style.transform = 'rotate(0deg)';
+                });
+                
+                // Open clicked FAQ
+                answer.classList.add('active');
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+
+        // Restaurant View Function
+        function viewRestaurant(restaurantId) {
+            alert(`Opening ${restaurantId} menu page. This will be implemented in the next page!`);
+        }
+
+        // Search Functionality
+        document.querySelector('.search-btn').addEventListener('click', function() {
+            const searchValue = document.querySelector('.search-box').value;
+            if (searchValue.trim()) {
+                alert(`Searching for: ${searchValue}. Search functionality will be implemented in upcoming pages!`);
+            }
+        });
+
+        // Enter key search
+        document.querySelector('.search-box').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                document.querySelector('.search-btn').click();
+            }
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle (basic implementation)
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            alert('Mobile menu will be implemented in future updates!');
+        });
+
+        // PWA Installation and Service Worker Registration
+        let deferredPrompt;
+        let installButton;
+
+        // Register Service Worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then((registration) => {
+                        console.log('SW registered: ', registration);
+                        
+                        // Check for updates
+                        registration.addEventListener('updatefound', () => {
+                            const newWorker = registration.installing;
+                            newWorker.addEventListener('statechange', () => {
+                                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                                    // New content is available, show update notification
+                                    showUpdateNotification();
+                                }
+                            });
+                        });
+                    })
+                    .catch((registrationError) => {
+                        console.log('SW registration failed: ', registrationError);
+                    });
+            });
+        }
+
+        // PWA Install Prompt
+        window.addEventListener('beforeinstallprompt', (e) => {
+            console.log('PWA install prompt triggered');
+            e.preventDefault();
+            deferredPrompt = e;
+            showInstallButton();
+        });
+
+        // Show install button
+        function showInstallButton() {
+            if (!installButton) {
+                installButton = document.createElement('button');
+                installButton.innerHTML = '<i class="fas fa-download"></i> Install App';
+                installButton.className = 'btn btn-primary install-btn';
+                installButton.style.cssText = `
+                    position: fixed;
+                    bottom: 20px;
+                    right: 20px;
+                    z-index: 1000;
+                    border-radius: 50px;
+                    padding: 12px 20px;
+                    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+                    animation: pulse 2s infinite;
+                `;
+                
+                // Add pulse animation
+                const style = document.createElement('style');
+                style.textContent = `
+                    @keyframes pulse {
+                        0% { transform: scale(1); }
+                        50% { transform: scale(1.05); }
+                        100% { transform: scale(1); }
+                    }
+                `;
+                document.head.appendChild(style);
+                
+                installButton.addEventListener('click', installPWA);
+                document.body.appendChild(installButton);
+            }
+        }
+
+        // Install PWA
+        async function installPWA() {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                const { outcome } = await deferredPrompt.userChoice;
+                console.log(`User response to the install prompt: ${outcome}`);
+                
+                if (outcome === 'accepted') {
+                    console.log('User accepted the install prompt');
+                    hideInstallButton();
+                }
+                
+                deferredPrompt = null;
+            }
+        }
+
+        // Hide install button
+        function hideInstallButton() {
+            if (installButton) {
+                installButton.remove();
+                installButton = null;
+            }
+        }
+
+        // Handle app installed
+        window.addEventListener('appinstalled', (evt) => {
+            console.log('PWA was installed');
+            hideInstallButton();
+            
+            // Show welcome message
+            setTimeout(() => {
+                alert('🎉 Foodie app installed successfully! You can now access it from your home screen.');
+            }, 1000);
+        });
+
+        // Show update notification
+        function showUpdateNotification() {
+            const updateBanner = document.createElement('div');
+            updateBanner.innerHTML = `
+                <div style="
+                    position: fixed;
+                    top: 80px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background: #4caf50;
+                    color: white;
+                    padding: 12px 20px;
+                    border-radius: 25px;
+                    z-index: 1001;
+                    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+                    animation: slideDown 0.3s ease-out;
+                ">
+                    <i class="fas fa-sync-alt"></i> New version available! 
+                    <button onclick="location.reload()" style="
+                        background: white;
+                        color: #4caf50;
+                        border: none;
+                        padding: 4px 12px;
+                        border-radius: 15px;
+                        margin-left: 10px;
+                        cursor: pointer;
+                        font-weight: 500;
+                    ">Update</button>
+                    <button onclick="this.parentElement.parentElement.remove()" style="
+                        background: transparent;
+                        color: white;
+                        border: none;
+                        margin-left: 8px;
+                        cursor: pointer;
+                        font-size: 16px;
+                    ">&times;</button>
+                </div>
+            `;
+            
+            const slideDownStyle = document.createElement('style');
+            slideDownStyle.textContent = `
+                @keyframes slideDown {
+                    from { transform: translateX(-50%) translateY(-100%); }
+                    to { transform: translateX(-50%) translateY(0); }
+                }
+            `;
+            document.head.appendChild(slideDownStyle);
+            
+            document.body.appendChild(updateBanner);
+            
+            // Auto-hide after 10 seconds
+            setTimeout(() => {
+                if (updateBanner.parentElement) {
+                    updateBanner.remove();
+                }
+            }, 10000);
+        }
+
+        // Handle online/offline status
+        function updateOnlineStatus() {
+            const statusIndicator = document.getElementById('online-status') || createStatusIndicator();
+            
+            if (navigator.onLine) {
+                statusIndicator.style.display = 'none';
+            } else {
+                statusIndicator.innerHTML = '<i class="fas fa-wifi"></i> You are offline. Some features may be limited.';
+                statusIndicator.style.display = 'block';
+            }
+        }
+
+        function createStatusIndicator() {
+            const indicator = document.createElement('div');
+            indicator.id = 'online-status';
+            indicator.style.cssText = `
+                position: fixed;
+                top: 80px;
+                left: 0;
+                right: 0;
+                background: #ff9800;
+                color: white;
+                text-align: center;
+                padding: 8px;
+                z-index: 1000;
+                display: none;
+                font-size: 14px;
+            `;
+            document.body.appendChild(indicator);
+            return indicator;
+        }
+
+        // Listen for online/offline events
+        window.addEventListener('online', updateOnlineStatus);
+        window.addEventListener('offline', updateOnlineStatus);
+        
+        // Initial status check
+        updateOnlineStatus();
+
+        // Request notification permission
+        if ('Notification' in window && navigator.serviceWorker) {
+            if (Notification.permission === 'default') {
+                setTimeout(() => {
+                    Notification.requestPermission().then(permission => {
+                        console.log('Notification permission:', permission);
+                        if (permission === 'granted') {
+                            new Notification('Foodie Notifications Enabled!', {
+                                body: 'You\'ll receive updates about your orders.',
+                                icon: '/manifest-icon-192.png',
+                                badge: '/manifest-icon-96.png'
+                            });
+                        }
+                    });
+                }, 3000);
+            }
+        }
+
+        // Add to home screen prompt for iOS
+        function isIOS() {
+            return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+        }
+
+        function isInStandaloneMode() {
+            return window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone;
+        }
+
+        if (isIOS() && !isInStandaloneMode()) {
+            setTimeout(() => {
+                const iosInstallPrompt = document.createElement('div');
+                iosInstallPrompt.innerHTML = `
+                    <div style="
+                        position: fixed;
+                        bottom: 20px;
+                        left: 20px;
+                        right: 20px;
+                        background: white;
+                        border: 2px solid #ff6b6b;
+                        border-radius: 15px;
+                        padding: 15px;
+                        z-index: 1001;
+                        box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+                        text-align: center;
+                    ">
+                        <div style="color: #333; margin-bottom: 10px;">
+                            <i class="fas fa-mobile-alt" style="color: #ff6b6b; font-size: 24px;"></i>
+                        </div>
+                        <div style="color: #333; font-weight: 500; margin-bottom: 8px;">Install Foodie App</div>
+                        <div style="color: #666; font-size: 14px; margin-bottom: 12px;">
+                            Tap <i class="fas fa-share" style="color: #007AFF;"></i> then "Add to Home Screen"
+                        </div>
+                        <button onclick="this.parentElement.parentElement.remove()" style="
+                            background: #ff6b6b;
+                            color: white;
+                            border: none;
+                            padding: 8px 16px;
+                            border-radius: 20px;
+                            cursor: pointer;
+                        ">Got it!</button>
+                    </div>
+                `;
+                document.body.appendChild(iosInstallPrompt);
+                
+                // Auto-hide after 15 seconds
+                setTimeout(() => {
+                    if (iosInstallPrompt.parentElement) {
+                        iosInstallPrompt.remove();
+                    }
+                }, 15000);
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
